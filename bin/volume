@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+
+current_volume () {
+   pamixer --get-volume-human
+}
+
+case $1 in
+	up)
+      pamixer -i 10
+      vol=$(pamixer --get-volume)
+      dunstify 'Increasing volume' -h int:value:$vol
+      ;;
+	down)
+      pamixer -d 10
+      vol=$(pamixer --get-volume)
+      dunstify 'Decreasing volume' -h int:value:$vol
+      ;;
+   mute)
+      vol=$(current_volume)
+      if [ $vol = muted ]; then
+         pamixer -u
+      else
+         pamixer -m
+      fi
+      ;;
+   *)
+      echo option not found
+esac

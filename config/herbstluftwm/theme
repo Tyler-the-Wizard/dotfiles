@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+
+hc () {
+    herbstclient "$@"
+}
+config_dir=~/.config/herbstluftwm
+
+. $config_dir/nord
+
+xsetroot -solid $nord0
+
+# theme
+hc attr theme.tiling.reset 1
+hc attr theme.floating.reset 1
+hc set frame_border_width 0
+hc set show_frame_decorations 'none'
+hc set frame_gap 30
+
+hc attr theme.title_when never
+hc attr theme.border_width 0
+hc attr theme.floating.border_width 0
+hc attr theme.tiling.outer_width 1
+hc attr theme.background_color $nord1

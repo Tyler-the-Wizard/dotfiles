@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+
+scrot_filename='Screenshot-%F-%H%M%S.png'
+
+notify ()
+{
+   final_filename=$(ls -rt ~/Pictures/Screenshots | tail -n 1)
+   dunstify 'Screenshot saved!' -b "Screenshot saved to $final_filename"
+}
+
+case $1 in
+	all)
+      scrot -F $scrot_filename -e 'mv $f ~/Pictures/Screenshots/'
+      notify
+      ;;
+	selection)
+      scrot -s -F $scrot_filename -e 'mv $f ~/Pictures/Screenshots/'
+      notify
+      ;;
+   *)
+      echo option not found
+esac
