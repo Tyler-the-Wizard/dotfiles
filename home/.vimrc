@@ -12,6 +12,10 @@ set smarttab
 set shiftwidth=4
 set tabstop=4
 
+" Disable automatic backups/swapfiles
+set nobackup
+set noswapfile
+
 " Keymaps
 nmap <F1> :echo<CR>
 imap <F1> <C-o>:echo<CR>
