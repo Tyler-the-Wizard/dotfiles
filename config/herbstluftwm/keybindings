@@ -85,5 +85,5 @@ hc keybind XF86AudioLowerVolume spawn $scripts/volume down
 hc keybind XF86AudioMute spawn $scripts/volume mute
 hc keybind XF86MonBrightnessUp spawn $scripts/brightness up
 hc keybind XF86MonBrightnessDown spawn $scripts/brightness down
-# hc keybind Print spawn $config_dir/scripts/screenshot all
-# hc keybind $Alt-Print spawn $config_dir/scripts/screenshot selection
+hc keybind Print spawn $scripts/screenshot all
+hc keybind $Alt-Print spawn $scripts/screenshot selection
