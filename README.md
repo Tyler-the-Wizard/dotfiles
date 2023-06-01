@@ -1,7 +1,11 @@
-# Nordia
+# Sunsetter
 
-So I like [nord](https://www.nordtheme.com/). I made a minimalist desktop based on it.
+My second try at this "Ricing" business.
 
-![A clean, minimalist desktop with nord.](example.png)
+It's very bright and pink. My reasoning is that I'm not really going to be staring at the desktop too often — usually, I'm playing a game or have the browser or editor maximized. This is also why I decided not to add a wallpaper; there is almost always something covering it up, so I just went with a plain solid color.
 
-I made this desktop with Artix using the Zen kernel. It was my first time using either of them and I ran into a lot of inconvenient things I had to fix. In my opinion, it would have been a lot easier to simply use Arch. Was it worth it to get to a computer without systemd? There isn't any noticeable difference in performance, as far as I can see. It's just to sort of know, I guess, that the software running it all is more better-designed. Worth it, no.
+The colorscheme this time is [catppuccin](https://github.com/catppuccin/). Woooow. I used the Frappé palette for most things, but I also stole some colors from the Latte palette as I saw fit.
+
+![Image not exist yet](uhhhh.png)
+
+And yes, the rice is named after the song [Sunsetter](https://youtu.be/WPUR6IN99Ic) from [Homestuck](https://www.homestuck.com/story). But I think that [Moonsetter](https://youtu.be/75kJb_aAvKY) fits the mood I was going for a little better.

@@ -31,12 +31,12 @@ hc unlock
 # initialize miscellaneous desktop stuff
 feh --no-fehbg --bg-scale ~/.config/wallpaper*
 
-eww daemon
-eww open workspaces
+# eww daemon
+# eww open workspaces
 
-if pgrep dunst; then pkill dunst; fi
-dunst
+# if pgrep dunst; then pkill dunst; fi
+# dunst
 
 if pgrep picom; then pkill picom; fi
-picom --experimental-backends --log-file /storage/picom-log.txt --config ~/.config/picom.conf -b
+picom --log-file /storage/picom-log.txt --config ~/.config/picom.conf -b
 

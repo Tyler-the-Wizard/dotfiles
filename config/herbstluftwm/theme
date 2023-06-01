@@ -5,9 +5,7 @@ hc () {
 }
 config_dir=~/.config/herbstluftwm
 
-. $config_dir/nord
-
-xsetroot -solid $nord0
+# xsetroot -solid $nord0
 
 # theme
 hc attr theme.tiling.reset 1
@@ -20,4 +18,4 @@ hc attr theme.title_when never
 hc attr theme.border_width 0
 hc attr theme.floating.border_width 0
 hc attr theme.tiling.outer_width 1
-hc attr theme.background_color $nord1
+# hc attr theme.background_color $nord1

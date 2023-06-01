@@ -4,6 +4,7 @@ hc () {
     herbstclient "$@"
 }
 config_dir=~/.config/herbstluftwm
+scripts=~/.bin/scripts
 
 # keybindings
 hc keyunbind --all
@@ -14,7 +15,8 @@ Win=Mod4
 hc keybind $Win-Shift-q quit
 hc keybind $Win-Shift-r reload
 hc keybind $Win-Return spawn alacritty
-hc keybind $Win-space spawn sidebar
+hc keybind $Win-d spawn rofi -show drun
+# hc keybind $Win-space spawn sidebar
 
 # basic movement in tiling and floating mode
 # focusing clients
@@ -78,13 +80,10 @@ hc keybind $Alt-Tab         cycle_all +1
 hc keybind $Alt-Shift-Tab   cycle_all -1
 
 # media keys
-hc keybind XF86AudioRaiseVolume spawn $config_dir/scripts/volume up
-hc keybind XF86AudioLowerVolume spawn $config_dir/scripts/volume down
-hc keybind XF86AudioMute spawn $config_dir/scripts/volume mute
-hc keybind XF86MonBrightnessUp spawn $config_dir/scripts/brightness up
-hc keybind XF86MonBrightnessDown spawn $config_dir/scripts/brightness down
-hc keybind Print spawn $config_dir/scripts/screenshot all
-hc keybind $Alt-Print spawn $config_dir/scripts/screenshot selection
-
-# TEMP BINDING for game development
-hc keybind $Win-x spawn pkill -3 python3
+hc keybind XF86AudioRaiseVolume spawn $scripts/volume up
+hc keybind XF86AudioLowerVolume spawn $scripts/volume down
+hc keybind XF86AudioMute spawn $scripts/volume mute
+hc keybind XF86MonBrightnessUp spawn $scripts/brightness up
+hc keybind XF86MonBrightnessDown spawn $scripts/brightness down
+# hc keybind Print spawn $config_dir/scripts/screenshot all
+# hc keybind $Alt-Print spawn $config_dir/scripts/screenshot selection
