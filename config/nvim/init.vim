@@ -2,10 +2,10 @@
 set number
 set nowrap
 
-" a tab is 3 spaces
-set tabstop=3
-set softtabstop=3
-set shiftwidth=3
+" a tab is 4 spaces
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
 set expandtab
 set autoindent
 set fileformat=unix
